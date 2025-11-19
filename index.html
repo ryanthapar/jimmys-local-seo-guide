@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Local SEO - Dominate Your Local Market</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .benefits {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #2d3748;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-icon {
+            font-size: 2em;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .benefit-content h3 {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+        
+        .benefit-content p {
+            color: #4a5568;
+            font-size: 1.05em;
+        }
+        
+        .outcome-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .outcome-section h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #2d3748;
+        }
+        
+        .outcome-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .outcome-box {
+            padding: 30px 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .outcome-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .outcome-text {
+            font-size: 1.1em;
+            color: #4a5568;
+        }
+        
+        .preview-section {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        
+        .preview-section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #2d3748;
+        }
+        
+        .toc-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .toc-header {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .toc-item {
+            margin-bottom: 20px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .toc-item::before {
+            content: "📄";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .toc-item h4 {
+            color: #2d3748;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .toc-item p {
+            color: #718096;
+            font-size: 0.95em;
+        }
+        
+        .pricing-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .pricing-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+        
+        .pricing-box {
+            background: white;
+            border: 3px solid #667eea;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .price {
+            font-size: 3em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .price-subtext {
+            color: #718096;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .whats-included {
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .whats-included h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+        
+        .included-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+        
+        .included-item::before {
+            content: "✓";
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+        
+        .guarantee-badge {
+            background: #48bb78;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        .faq-section {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        
+        .faq-section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #2d3748;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            color: #4a5568;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+        
+        .business-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .business-type {
+            background: #f7fafc;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: #4a5568;
+            font-size: 0.95em;
+        }
+        
+        .final-cta {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .bonus-section {
+            padding: 60px 20px;
+            background: #fff5e6;
+            border-top: 3px solid #ff9800;
+            border-bottom: 3px solid #ff9800;
+        }
+        
+        .bonus-section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+        
+        .bonus-banner {
+            background: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        
+        .bonus-content {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .bonus-content h3 {
+            font-size: 1.5em;
+            color: #2d3748;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .bonus-content p {
+            color: #4a5568;
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .bonus-features {
+            margin-top: 25px;
+        }
+        
+        .bonus-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+        
+        .bonus-feature::before {
+            content: "⭐";
+            font-size: 1.3em;
+            margin-right: 15px;
+        }
+        
+        .bonus-value {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 2px dashed #e2e8f0;
+        }
+        
+        .bonus-value-text {
+            font-size: 1.3em;
+            color: #718096;
+            text-decoration: line-through;
+        }
+        
+        .bonus-free {
+            font-size: 1.5em;
+            color: #48bb78;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            .benefit-item {
+                flex-direction: column;
+            }
+            
+            .benefit-icon {
+                margin-bottom: 15px;
+            }
+            
+            .outcome-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .toc-container {
+                padding: 25px;
+            }
+            
+            .pricing-box {
+                padding: 25px;
+            }
+            
+            .price {
+                font-size: 2.5em;
+            }
+            
+            .business-types {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1519804875782533');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1519804875782533&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Stop Losing Customers to Competitors Who Rank Above You</h1>
+            <p>Master the exact strategies that put local businesses in the top 3 map pack positions—and capture the customers actively searching for your services right now</p>
+            <p style="font-size: 1.1em; margin-bottom: 30px; background: rgba(255,255,255,0.15); padding: 15px; border-radius: 8px;">🎁 <strong>Limited Time:</strong> Get the Complete Implementation Checklist FREE ($47 value)</p>
+            <a href="https://buy.stripe.com/dRm8wPglF8lz6aH7CEfrW00" class="cta-button">Get the Guide Now</a>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>What You'll Achieve</h2>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">📍</div>
+                <div class="benefit-content">
+                    <h3>Dominate Your Local Search Results</h3>
+                    <p>Learn the 7 ranking factors that control map pack positions—and how to optimize each one to outrank your competition</p>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">📞</div>
+                <div class="benefit-content">
+                    <h3>Generate More Phone Calls & Walk-Ins</h3>
+                    <p>Capture 3X more visibility by securing top positions where 76% of local searches happen—turning browsers into buyers</p>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">🎯</div>
+                <div class="benefit-content">
+                    <h3>Target High-Intent Customers Ready to Buy</h3>
+                    <p>Discover which keywords drive actual revenue and how to rank for searches where customers are ready to purchase—not just browse</p>
+                </div>
+            </div>
+            
+            <div class="benefit-item">
+                <div class="benefit-icon">⚡</div>
+                <div class="benefit-content">
+                    <h3>Build a Defensible Competitive Advantage</h3>
+                    <p>Create a local SEO system that compounds month after month—making it increasingly difficult for competitors to catch you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="outcome-section">
+        <div class="container">
+            <h2>Your Local SEO Results</h2>
+            <div class="outcome-grid">
+                <div class="outcome-box">
+                    <div class="outcome-number">3X</div>
+                    <div class="outcome-text">More visibility than position #4</div>
+                </div>
+                <div class="outcome-box">
+                    <div class="outcome-number">76%</div>
+                    <div class="outcome-text">Of mobile searches have local intent</div>
+                </div>
+                <div class="outcome-box">
+                    <div class="outcome-number">#1</div>
+                    <div class="outcome-text">Highest-ROI marketing channel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="preview-section">
+        <div class="container">
+            <h2>Inside the Guide: Your Complete Roadmap</h2>
+            <div class="toc-container">
+                <div class="toc-header">Table of Contents</div>
+                
+                <div class="toc-item">
+                    <h4>Why Local SEO Is Your Highest-ROI Investment</h4>
+                    <p>Understanding the map pack advantage and how it drives revenue</p>
+                </div>
+                
+                <div class="toc-item">
+                    <h4>The Seven Ranking Factor Buckets</h4>
+                    <p>The complete framework for dominating local search results</p>
+                </div>
+                
+                <div class="toc-item">
+                    <h4>Google Business Profile Optimization</h4>
+                    <p>Category selection, completeness, and profile strategies that work</p>
+                </div>
+                
+                <div class="toc-item">
+                    <h4>Location-Based Ranking Factors</h4>
+                    <p>How geography affects visibility and what you can control</p>
+                </div>
+                
+                <div class="toc-item">
+                    <h4>Review Strategy & Management</h4>
+                    <p>Systematic approaches to gathering and leveraging customer feedback</p>
+                </div>
+                
+                <div class="toc-item">
+                    <h4>Website Optimization for Local Rankings</h4>
+                    <p>On-page SEO that reinforces your GBP signals</p>
+                </div>
+                
+                <div class="toc-item">
+                    <h4>Building High-Authority Backlinks</h4>
+                    <p>Three proven strategies for earning quality links that last</p>
+                </div>
+                
+                <div class="toc-item">
+                    <h4>Citations & NAP Consistency</h4>
+                    <p>Directory listings that validate your business legitimacy</p>
+                </div>
+                
+                <div class="toc-item">
+                    <h4>Advanced Tactics & Implementation</h4>
+                    <p>Strategic hacks and your complete action checklist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bonus-section">
+        <div class="container">
+            <div class="bonus-banner">🎁 LIMITED TIME BONUS - INCLUDED FREE</div>
+            <h2>Get the Complete Implementation Checklist</h2>
+            <div class="bonus-content">
+                <h3>LOCAL SEO MASTER CHECKLIST<br>(FULL SYSTEM IMPLEMENTATION)</h3>
+                <p>A complete, step-by-step audit of every ranking factor, optimization tactic, and strategy taught in the guide. This isn't just a list—it's your complete implementation roadmap.</p>
+                
+                <div class="bonus-features">
+                    <div class="bonus-feature">Every ranking factor organized and actionable</div>
+                    <div class="bonus-feature">Step-by-step implementation sequence</div>
+                    <div class="bonus-feature">White-label ready for client presentations</div>
+                    <div class="bonus-feature">Professional presentation format</div>
+                    <div class="bonus-feature">Track progress as you implement</div>
+                </div>
+                
+                <div class="bonus-value">
+                    <div class="bonus-value-text">Value: $47</div>
+                    <div class="bonus-free">Yours FREE with Guide Purchase</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2>Get Your Complete Local SEO Guide</h2>
+            <div class="pricing-box">
+                <div class="price">$19</div>
+                <div class="price-subtext">+ HST • One-Time Payment • Instant Access</div>
+                
+                <div class="whats-included">
+                    <h3>What's Included:</h3>
+                    <div class="included-item">20-page comprehensive PDF guide</div>
+                    <div class="included-item" style="font-weight: bold; color: #ff9800;">FREE BONUS: Complete Implementation Checklist ($47 value)</div>
+                    <div class="included-item">7 proven ranking factor strategies</div>
+                    <div class="included-item">Complete GBP optimization checklist</div>
+                    <div class="included-item">Keyword research framework</div>
+                    <div class="included-item">Review generation system</div>
+                    <div class="included-item">Backlink building playbook</div>
+                    <div class="included-item">Immediate delivery to your email</div>
+                </div>
+                
+                <a href="https://buy.stripe.com/dRm8wPglF8lz6aH7CEfrW00" class="cta-button">Download Your Guide Now</a>
+                
+                <div class="guarantee-badge">
+                    🛡️ 90-Day Results Guarantee
+                </div>
+                <p style="margin-top: 15px; color: #4a5568;">If you don't see ranking improvements in 90 days, get your money back—no questions asked.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How much time do I need to implement this?</div>
+                <div class="faq-answer">
+                    This guide is designed for busy business owners. You can implement the core strategies with just 2 hours per week. The system is built for consistent, incremental progress rather than overwhelming overhauls.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Will this work for my type of business?</div>
+                <div class="faq-answer">
+                    This guide works for any local business that wants to be found by customers searching in their area. Perfect for:
+                    <div class="business-types">
+                        <div class="business-type">Plumbers</div>
+                        <div class="business-type">Electricians</div>
+                        <div class="business-type">HVAC Companies</div>
+                        <div class="business-type">Roofers</div>
+                        <div class="business-type">Landscapers</div>
+                        <div class="business-type">Real Estate Agents</div>
+                        <div class="business-type">Restaurants</div>
+                        <div class="business-type">Cafes & Coffee Shops</div>
+                        <div class="business-type">Dentists</div>
+                        <div class="business-type">Chiropractors</div>
+                        <div class="business-type">Physical Therapists</div>
+                        <div class="business-type">Lawyers</div>
+                        <div class="business-type">Accountants</div>
+                        <div class="business-type">Insurance Agents</div>
+                        <div class="business-type">Auto Repair Shops</div>
+                        <div class="business-type">Hair Salons</div>
+                        <div class="business-type">Barber Shops</div>
+                        <div class="business-type">Spas</div>
+                        <div class="business-type">Gyms & Fitness Studios</div>
+                        <div class="business-type">Yoga Studios</div>
+                        <div class="business-type">Pet Groomers</div>
+                        <div class="business-type">Veterinarians</div>
+                        <div class="business-type">Home Cleaners</div>
+                        <div class="business-type">Carpet Cleaners</div>
+                        <div class="business-type">Pest Control</div>
+                        <div class="business-type">Locksmiths</div>
+                        <div class="business-type">Contractors</div>
+                        <div class="business-type">Painters</div>
+                        <div class="business-type">Flooring Companies</div>
+                        <div class="business-type">Pool Services</div>
+                        <div class="business-type">Moving Companies</div>
+                        <div class="business-type">Storage Facilities</div>
+                        <div class="business-type">Towing Services</div>
+                        <div class="business-type">Wedding Venues</div>
+                        <div class="business-type">Photographers</div>
+                        <div class="business-type">Florists</div>
+                        <div class="business-type">Bakeries</div>
+                        <div class="business-type">Catering Services</div>
+                        <div class="business-type">Funeral Homes</div>
+                        <div class="business-type">Senior Care Facilities</div>
+                        <div class="business-type">Daycare Centers</div>
+                        <div class="business-type">Tutoring Services</div>
+                        <div class="business-type">Music Teachers</div>
+                        <div class="business-type">Repair Services</div>
+                        <div class="business-type">Retail Stores</div>
+                        <div class="business-type">Hotels & B&Bs</div>
+                        <div class="business-type">Property Management</div>
+                        <div class="business-type">Construction Companies</div>
+                        <div class="business-type">Financial Advisors</div>
+                        <div class="business-type">And many more...</div>
+                    </div>
+                    <p style="margin-top: 15px;">Whether you're service-based, have a storefront, or both—these strategies apply.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do I need technical skills or marketing experience?</div>
+                <div class="faq-answer">
+                    Not at all. This guide is written for complete beginners with basic computer skills. Every strategy is explained in plain English with step-by-step instructions you can follow immediately—no coding or technical expertise required.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What format is the guide delivered in?</div>
+                <div class="faq-answer">
+                    You'll receive a comprehensive 20-page PDF guide delivered instantly to your email after purchase. You can read it on any device, print it out, or save it for reference whenever you need it.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What if I don't see results?</div>
+                <div class="faq-answer">
+                    Local SEO is a proven channel, but we stand behind this guide completely. If you implement the strategies and don't see ranking improvements within 90 days, simply email us and we'll refund your purchase—no questions asked.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do I need a website or Google Business Profile already?</div>
+                <div class="faq-answer">
+                    You'll need a Google Business Profile (free to create) and ideally a basic website, though the guide covers optimization for both. If you don't have these yet, the guide includes instructions to help you get started.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Stop Letting Competitors Steal Your Customers</h2>
+            <p>Every day you wait is another day customers find your competitors first. Get the complete roadmap to local search dominance—and start capturing the customers already searching for what you offer.</p>
+            <a href="https://buy.stripe.com/dRm8wPglF8lz6aH7CEfrW00" class="cta-button" style="background: white; color: #667eea;">Download Your Guide Now - $19</a>
+        </div>
+    </section>
+</body>
+</html>
